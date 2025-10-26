@@ -1,0 +1,19 @@
+configuracion de proxy
+
+1 Abre Firefox.
+
+2 Ve a Preferencias > General > Configuración de red > Configuración.
+
+3 Selecciona Configuración manual del proxy.
+
+4 En SOCKS Host, ingresa 127.0.0.1 y en Puerto, ingresa 9050.
+
+5 Marca la casilla SOCKS v5.
+
+Asegúrate de que Usar este proxy para todos los protocolos esté seleccionado.
+Guarda los cambios.
+
+sudo nano /etc/proxychains.conf
+socks5  127.0.0.1 9050
+
+sudo systemctl restart proxychains

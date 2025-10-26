@@ -1,0 +1,24 @@
+Instalacion Dependencias
+
+sudo apt install -y pipx
+
+echo $PATH
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+pip install psutil  
+
+sudo systemctl start tor
+
+sudo apt update
+sudo apt install proxychains
+
+python anonymazer.py
+
+deactivate 
